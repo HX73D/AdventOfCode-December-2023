@@ -15,7 +15,6 @@ int calCulateSum(std::string line) {
     int aantal = numbers.size();
     int correctNumber = 0;
 
-    // 1 word 11
     if (aantal == 1) {
        std::string str = numbers[0] + numbers[0];
        correctNumber += std::stoi(str);
@@ -24,10 +23,6 @@ int calCulateSum(std::string line) {
         std::string str = numbers[0] + numbers[aantal - 1];
         correctNumber += std::stoi(str);
     }
-
-
-
-    //std::cout << std::endl;
 
     return correctNumber;
 }
