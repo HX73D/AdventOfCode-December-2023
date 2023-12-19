@@ -1,1 +1,2 @@
 C:\Users\HX73D\Desktop\learnC++\Day 1 Trebuchet part 2.cpp\x64\Debug\Day 1 Trebuchet part 2.cpp.exe
+C:\Users\HX73D\Desktop\AdventOfCode-December-2023\Day 1 Trebuchet part 2.cpp\x64\Debug\Day 1 Trebuchet part 2.cpp.exe
