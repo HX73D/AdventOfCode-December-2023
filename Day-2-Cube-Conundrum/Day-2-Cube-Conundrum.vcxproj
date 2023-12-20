@@ -24,6 +24,7 @@
     <ProjectGuid>{a32e671a-8700-4667-bd6a-a21e42a9d5ba}</ProjectGuid>
     <RootNamespace>Day2CubeConundrum</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Day-2-Cube-Conundrum-part-2</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

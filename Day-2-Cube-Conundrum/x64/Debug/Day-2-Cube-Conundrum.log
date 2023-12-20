@@ -1,5 +1,6 @@
-﻿  Day-2-Cube-Conundrum.cpp
-C:\Users\HX73D\Desktop\AdventOfCode-December-2023\Day-2-Cube-Conundrum\Day-2-Cube-Conundrum.cpp(27,32): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\HX73D\Desktop\AdventOfCode-December-2023\Day-2-Cube-Conundrum\Day-2-Cube-Conundrum.cpp(56,31): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\HX73D\Desktop\AdventOfCode-December-2023\Day-2-Cube-Conundrum\Day-2-Cube-Conundrum.cpp(85,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  Day-2-Cube-Conundrum.vcxproj -> C:\Users\HX73D\Desktop\AdventOfCode-December-2023\Day-2-Cube-Conundrum\x64\Debug\Day-2-Cube-Conundrum.exe
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Day-2-Cube-Conundrum.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Day-2-Cube-Conundrum.cpp
+C:\Users\HX73D\Desktop\AdventOfCode-December-2023\Day-2-Cube-Conundrum\Day-2-Cube-Conundrum.cpp(33,32): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\HX73D\Desktop\AdventOfCode-December-2023\Day-2-Cube-Conundrum\Day-2-Cube-Conundrum.cpp(57,31): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\HX73D\Desktop\AdventOfCode-December-2023\Day-2-Cube-Conundrum\Day-2-Cube-Conundrum.cpp(80,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Day-2-Cube-Conundrum.vcxproj -> C:\Users\HX73D\Desktop\AdventOfCode-December-2023\Day-2-Cube-Conundrum\x64\Debug\Day-2-Cube-Conundrum-part-2.exe
