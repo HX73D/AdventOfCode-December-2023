@@ -8,6 +8,11 @@
 int gameId = 0;
 
 int checkPosibility(std::string line) {
+    int currentGreen;
+    int maxRed = 0;
+    int maxGreen = 0;
+    
+    int maxBlue = 0; 
     std::string line1 = ";";
     line1 += line += ";";
     gameId += 1;
@@ -43,6 +48,19 @@ int checkPosibility(std::string line) {
                 else {
                     boolGreen = false;
                 }
+                if (boolGreen) {
+                    std::string strGreen1 = (green1 == ' ') ? "" : std::string(1, green1);
+                    std::string strGreen2 = std::string(1, green2);
+                    std::string currentGreen = strGreen1 + strGreen2;
+                    /*std::cout << std::endl << std::stoi(currentGreen);*/
+                    
+
+                    if (std::stoi(currentGreen) >  maxGreen) {
+                       maxGreen = std::stoi(currentGreen);
+                             
+                    /*std::cout << maxGreen << "\n\n";*/
+                    }
+                }
 
             }
             
@@ -67,6 +85,19 @@ int checkPosibility(std::string line) {
                 else {
                     boolBlue = false;
                 }
+                if (boolBlue) {
+                    std::string strBlue1 = (blue1 == ' ') ? "" : std::string(1, blue1);
+                    std::string strBlue2 = std::string(1, blue2);
+                    std::string currentBlue = strBlue1 + strBlue2;
+                    /*std::cout << std::endl << std::stoi(currentBlue);*/
+
+
+                    if (std::stoi(currentBlue) > maxBlue) {
+                        maxBlue = std::stoi(currentBlue);
+
+                        /*std::cout << maxBlue << "\n\n";*/
+                    }
+                }
 
             }
 
@@ -75,7 +106,7 @@ int checkPosibility(std::string line) {
         }
         if (text.find(red) != std::string::npos) {
             oneRound = text;
-
+            
             if (text.find(';') != std::string::npos) {
                 int IndexRed = oneRound.find(red);
                 char red1 = char(oneRound[IndexRed - 3]);
@@ -90,15 +121,30 @@ int checkPosibility(std::string line) {
                 else {
                     boolRed = false;
                 }
+                if (boolRed) {
+                    std::string strRed1 = (red1 == ' ') ? "" : std::string(1, red1);
+                    std::string strRed2 = std::string(1, red2);
+                    std::string currentRed = strRed1 + strRed2;
+                    /*std::cout << std::endl << std::stoi(currentRed);*/
+
+
+                    if (std::stoi(currentRed) > maxRed) {
+                        maxRed = std::stoi(currentRed);
+
+                        /*std::cout << maxRed << "\n\n";*/
+                    }
+                }
             }
             text.replace(text.find(red), 4, " ");
         }
+
         text += i;
     }
 
     if (boolGreen && boolRed && boolBlue) {
-        std::cout << gameId << std::endl;
-        return gameId;
+        int maxTotal = maxRed * maxBlue * maxGreen;
+        std::cout << maxTotal << std::endl;
+        return maxTotal;
     }
     else {
         return 0;
